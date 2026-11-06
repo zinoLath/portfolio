@@ -1,0 +1,60 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tgheros}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[margin=1.65cm]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\titleformat{\section}{\normalsize\bfseries}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+\setlist[itemize]{leftmargin=14pt,itemsep=1pt,topsep=1pt,parsep=0pt}
+\hypersetup{pdftitle={João Henrique Flauzino - Machine Learning},pdfauthor={João Henrique Flauzino}}
+\begin{document}
+{\LARGE\bfseries João Henrique Flauzino}\\[3pt]
+Objetivo: ML Engineer Júnior | Data Engineer\\[3pt]
+{\small Itajubá, MG, Brasil | Cursando Sistemas de Informação — UNIFEI | \href{mailto:joaohflauzino@gmail.com}{joaohflauzino@gmail.com}\\
+\href{https://github.com/zinoLath}{github.com/zinoLath} | \href{https://www.linkedin.com/in/jhflauzino/}{linkedin.com/in/jhflauzino}}
+
+\section{Perfil}
+Desenvolvedor com experiência em integrações de APIs e automação em Python, e pesquisa aplicada em redes neurais para séries temporais. Busco posição júnior em ML Engineering e Data Engineering.
+
+\section{Experiência profissional}
+\textbf{Tech4Humans — Desenvolvedor Júnior} \hfill out. 2025 -- atual
+\begin{itemize}
+\item Desenvolvo automações em Python e plataformas de atendimento com React, com integrações de APIs como Clicksign e Infocar para processamento diário.
+\item Analiso requisições e mapeio fluxos das plataformas para construir pipelines de integração e automação de demandas.
+\item Implementei automação de resolução de tickets em lote, utilizada na operação de atendimento.
+\end{itemize}
+\textbf{Blinxel — Desenvolvedor Mobile em Realidade Aumentada}\\
+jan. 2023 -- jan. 2024\quad |\quad C\# e Unity: aplicações móveis de realidade aumentada, com carregamento dinâmico de cenas e vídeo volumétrico otimizado em dispositivos móveis.
+
+\section{Pesquisa aplicada em Machine Learning}
+\textbf{UNIFEI — Bolsista de pesquisa FAPEMIG | Projeto STEAM} \hfill jan. 2026 -- atual
+\begin{itemize}
+\item Atuo na preparação de dados, engenharia de atributos, modelagem, experimentação, análise e escrita científica para previsão de velocidade do vento com dados LiDAR.
+\item Comparo LSTM, TCN e variantes bidirecionais Seq2Seq com atenção contra ARIMA, Random Forest e persistência; uso TensorFlow e Optuna.
+\item Avalio previsões de até 6h a partir de janelas de 12h, com divisão cronológica de treino/validação/teste e métricas por horizonte.
+\item No teste descrito no manuscrito submetido ao SBSR: LSTM com R\textsuperscript{2} de 0,636 e RMSE de 1,101 m/s, agregados sobre os 36 passos de previsão. Coautor de artigo submetido ao SBSR; ainda não publicado.
+\end{itemize}
+
+\section{Projetos selecionados}
+\textbf{File Sorter AI:} organização de arquivos com modelo pré-treinado local, CLI/GUI Qt e separação entre plano revisável e movimentação com verificação de integridade.\\
+\textbf{ATLAS:} coordenação de demandas em Python; log transacional JSONL, busca SQLite/FTS5 e entregas com leases e fencing. Núcleo determinístico.\\
+\textbf{Itachuva (equipe):} risco de alagamento em Itajubá; backend Node/Express reestruturado e pipeline meteorológica (ECMWF) integrada aos serviços de clima.\\
+\textbf{Relatório ad hoc (equipe):} ETL em KNIME via APIs do TerraBrasilis cruzado com o BDIA; modelagem PostgreSQL de desmatamento por município, estado e bioma em dashboard ad hoc.\\
+Desenvolvimento apoiado por agentes: especificações, implementação delegada, revisão e validação de artefatos, incluindo RAGs — bases de conhecimento indexadas para recuperação por agentes.
+
+\section{Formação e competências}
+\textbf{Sistemas de Informação — Universidade Federal de Itajubá}\\
+2023 -- conclusão prevista: junho de 2027.\\
+\textbf{ML e dados:} Python, TensorFlow/Keras, scikit-learn, Optuna, previsão de séries temporais, SQL e PostgreSQL.\\
+\textbf{Software:} APIs REST, React, Git, automação e desenvolvimento agêntico.\\
+\textbf{Idiomas:} português nativo; inglês avançado.
+\end{document}

@@ -1,0 +1,61 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tgheros}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[margin=1.4cm]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1.5pt}
+\titleformat{\section}{\normalsize\bfseries}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+\setlist[itemize]{leftmargin=14pt,itemsep=1pt,topsep=1pt,parsep=0pt}
+\hypersetup{pdftitle={João Henrique Flauzino - Machine Learning},pdfauthor={João Henrique Flauzino}}
+\begin{document}
+{\LARGE\bfseries João Henrique Flauzino}\\[3pt]
+Target: Junior ML Engineer | Data Engineer\\[3pt]
+{\small Itajubá, MG, Brazil | Information Systems student, UNIFEI | \href{mailto:joaohflauzino@gmail.com}{joaohflauzino@gmail.com}\\
+\href{https://github.com/zinoLath}{github.com/zinoLath} | \href{https://www.linkedin.com/in/jhflauzino/}{linkedin.com/in/jhflauzino}}
+
+\section{Summary}
+Software developer focused on Python API integrations, automation and applied ML research. Seeking junior ML Engineering or Data Engineering roles. Based in Brazil; open to remote work.
+
+\section{Professional Experience}
+\textbf{Tech4Humans — Junior Software Developer} \hfill Oct 2025 -- Present
+\begin{itemize}
+\item Develop Python automation and React-based customer support platforms, integrating APIs including Clicksign and Infocar for daily processing.
+\item Analyze HTTP requests issued by the platforms and reconstruct API workflows to build integration pipelines and automate operational tasks.
+\item Implemented batch ticket-resolution automation used in customer support operations.
+\end{itemize}
+\textbf{Blinxel — Augmented Reality Mobile Developer}\\
+Jan 2023 -- Jan 2024\quad |\quad C\# and Unity: AR mobile applications with dynamic scene loading and volumetric video optimization.
+
+\section{Applied Machine Learning Research}
+\textbf{UNIFEI — Undergraduate Researcher, FAPEMIG-funded | STEAM Project}\\
+Jan 2026 -- Present
+\begin{itemize}
+\item Contribute to data preparation, feature engineering, modeling, experiments, analysis and scientific writing for LiDAR-based wind-speed forecasting.
+\item Compare attention-based Seq2Seq LSTM, TCN and bidirectional variants against ARIMA, Random Forest and persistence, using TensorFlow and Optuna.
+\item Evaluate forecasts up to 6 hours ahead from 12-hour input windows, with chronological splits for training, validation and testing and per-horizon metrics.
+\item On the test set described in the manuscript submitted to SBSR, LSTM achieved R\textsuperscript{2} = 0.636 and RMSE = 1.101 m/s, aggregated across 36 forecast steps. Coauthor of a manuscript submitted to SBSR; not yet published.
+\end{itemize}
+
+\section{Selected Projects}
+\textbf{File Sorter AI:} file organization using a local pretrained model, a CLI/Qt GUI, reviewable plans and integrity-checked file operations.\\
+\textbf{ATLAS:} Python work coordination with a JSONL transaction log, SQLite/FTS5 search and lease-based delivery with fencing. Deterministic core.\\
+\textbf{Itachuva (team):} flood-risk mapping for Itajubá; Node/Express backend restructuring and ECMWF weather pipeline integration into climate services.\\
+\textbf{Ad-hoc deforestation reports (team):} KNIME ETL via TerraBrasilis APIs joined to the BDIA geographic database; PostgreSQL modeling of deforestation by municipality, state and biome in an ad hoc dashboard.\\
+Agent-assisted development: specifications, delegated implementation, review and artifact validation, including RAG development — indexed knowledge bases for agent retrieval.
+
+\section{Education and Skills}
+\textbf{Bachelor's degree in Information Systems — Universidade Federal de Itajubá}\\
+2023 -- Expected graduation: June 2027.\\
+\textbf{ML and data:} Python, TensorFlow/Keras, scikit-learn, Optuna, time-series forecasting, SQL, PostgreSQL.\\
+\textbf{Software:} REST APIs, React, Git, automation, agent-assisted development.\\
+\textbf{Languages:} Portuguese (native); English (advanced).
+\end{document}
