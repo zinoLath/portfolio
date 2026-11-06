@@ -967,7 +967,7 @@
             </div>
             <div class="table-scroll" role="region" aria-label="Tabela de resultados no horizonte de 6h (passo 36)" tabindex="0" data-pane="h6" hidden>
               <table>
-                <caption>Resultados no horizonte de 6h — métrica pontual no passo 36 (t+6 h), mesma rodada canônica e protocolo de rolling forecast da visão global.</caption>
+                <caption>Resultados no horizonte de 6h — métrica pontual no passo 36 (t+6 h) sobre as origens comuns do conjunto de teste, na mesma rodada canônica da visão global.</caption>
                 <thead>
                   <tr>
                     <th scope="col">Modelo</th>
@@ -994,13 +994,28 @@
                   <tr>
                     <th scope="row">LSTM bidirecional</th>
                     <td class="num">0,474</td>
-                    <td class="num">1,277</td>
+                    <td class="num">1,276</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">ARIMA</th>
+                    <td class="num">0,368</td>
+                    <td class="num">1,399</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Random Forest</th>
+                    <td class="num">0,355</td>
+                    <td class="num">1,414</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Persistência</th>
+                    <td class="num">0,201</td>
+                    <td class="num">1,573</td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <p class="table-note" data-pane="global">Linha destacada: LSTM, menor RMSE e maior R² da comparação. Métricas agregadas sobre os 36 passos, não uma métrica pontual em t+6 h. R² mede variância explicada, não acurácia percentual.</p>
-            <p class="table-note" data-pane="h6" hidden>Linha destacada: LSTM, menor RMSE e maior R² entre as arquiteturas no passo 36. Os baselines clássicos (ARIMA, Random Forest, persistência) não têm métrica pontual por horizonte registrada nesta rodada canônica — a comparação por horizonte contra eles está no manuscrito. R² mede variância explicada.</p>
+            <p class="table-note" data-pane="h6" hidden>Linha destacada: LSTM, menor RMSE e maior R² da comparação também no passo 36 — à frente de ARIMA, Random Forest e persistência. Mesma rodada canônica e protocolo da visão global, sobre as origens comuns do conjunto de teste. R² mede variância explicada.</p>
             <p class="read-note">A LSTM teve o menor erro global nesta comparação. Modelos simples seguem competitivos em horizontes curtos, e a bidirecionalidade não trouxe ganho global. O resultado não implica superioridade universal nem vantagem estatística sobre todas as redes.</p>
           </div>
         </div>
@@ -1157,7 +1172,7 @@
             <p class="case-kind">Projeto pessoal · infraestrutura de coordenação</p>
             <h3 id="atlas-title">ATLAS — estado rastreável para coordenar trabalho</h3>
           </div>
-          <p class="case-meta"><span>Projeto local</span><span class="status">Núcleo determinístico</span></p>
+          <p class="case-meta"><span>Projeto local</span><span class="status">Open source · MIT</span></p>
         </header>
         <p class="case-lead">CLI em Python com biblioteca padrão para capturar demandas, triar e operar uma base de conhecimento. Log transacional em JSONL, vistas derivadas em SQLite/FTS5 e Markdown, e reconstrução por replay.</p>
         <p class="case-line">Capturar <span class="arrow" aria-hidden="true">→</span> triar <span class="arrow" aria-hidden="true">→</span> operar <span class="arrow" aria-hidden="true">·</span> log transacional <span class="arrow" aria-hidden="true">→</span> vistas <span class="arrow" aria-hidden="true">→</span> replay</p>
@@ -1186,13 +1201,13 @@
             <div class="detail-row">
               <h4>Evidência</h4>
               <div>
-                <p>Código e suíte de testes existentes no repositório local. Os testes não foram executados nesta entrega; as afirmações acima descrevem o que está implementado, não cobertura medida.</p>
+                <p>Código público: <a href="https://github.com/zinoLath/atlas" rel="noopener noreferrer" target="_blank">github.com/zinoLath/atlas</a> (MIT), snapshot da rodada M1c.1. Suíte executada no snapshot publicado: <strong>292 testes verdes</strong> (152 s); cobertura medida de 66% — 13/19 suítes exercitam o código via subprocesso, fora do rastreio.</p>
               </div>
             </div>
             <div class="detail-row">
               <h4>Limites</h4>
               <div>
-                <p>Roteador LLM sempre ativo é roadmap, não funcionalidade entregue: o repositório atual não contém chamada a modelo. Não é uma plataforma autônoma empresarial. Projeto local, sem link público de código.</p>
+                <p>Roteador LLM sempre ativo é roadmap, não funcionalidade entregue: o repositório não contém chamada a modelo. Não é uma plataforma autônoma empresarial. Projeto sem deploy nesta apresentação.</p>
               </div>
             </div>
           </div>
